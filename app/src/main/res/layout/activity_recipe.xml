@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeActivity">
+
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="115dp"
+                android:ems="10"
+                android:hint="Enter title"
+                android:inputType="textMultiLine"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:id="@+id/recipeImage"
+                android:layout_width="299dp"
+                android:layout_height="207dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="Final Result Image"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/select_image" />
+
+
+            <TextView
+                android:id="@+id/ingredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recipeImage"
+                android:layout_marginStart="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredient"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:text="cost"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredient"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/cost"
+                android:textOn="10"
+                android:textOff="10"/>
+
+            <ToggleButton
+                android:id="@+id/c20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredient"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/c10"
+                android:textOn="20"
+                android:textOff="20" />
+
+            <ToggleButton
+                android:id="@+id/c30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredient"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/c20"
+                android:textOn="30"
+                android:textOff="30"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cost"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="time"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/t10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cost"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/time"
+                android:textOn="10"
+                android:textOff="10"/>
+
+            <ToggleButton
+                android:id="@+id/t20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cost"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/t10"
+                android:textOn="20"
+                android:textOff="20"/>
+
+            <ToggleButton
+                android:id="@+id/t30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cost"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/t20"
+                android:textOn="30"
+                android:textOff="30"/>
+
+
+            <EditText
+                android:id="@+id/add_ingredient"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/time"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Add ingredient" />
+
+            <ImageButton
+                android:id="@+id/button_ingredient"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/time"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/add_ingredient"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/plus" />
+
+            <ListView
+                android:id="@+id/ingredient_list"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/button_ingredient"
+                android:layout_marginTop="10dp" />
+
+
+            <EditText
+                android:id="@+id/recipe"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredient_list"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Recipe"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/tips"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recipe"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Additional tips"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/createRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tips"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="Create Recipe"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

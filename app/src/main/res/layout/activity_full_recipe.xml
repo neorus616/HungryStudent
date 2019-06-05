@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullRecipeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fullRecipeImage"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Recipe final image"
+                android:scaleType="centerCrop"
+                android:scaleX="1"
+                android:scaleY="1"
+                app:srcCompat="@drawable/select_image" />
+
+            <TextView
+                android:id="@+id/fullCostTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullRecipeImage"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Cost:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullRecipeImage"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_toEndOf="@id/fullCostTitle"
+                android:text="cost"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fullTimeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullCostTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Time:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullCostTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_toEndOf="@id/fullTimeTitle"
+                android:text="time"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fullIngredientsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullTimeTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Ingredients:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/listFullIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullIngredientsTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Ingredients"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fullRecipeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listFullIngredients"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Recipe:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullRecipeTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Recipe"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fullTipsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullRecipe"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Tips:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullTipsTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="tips"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/fullTips"
+                android:text="Delete Post"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/deleteButton"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="0dp"
+                android:text="Edit Post"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

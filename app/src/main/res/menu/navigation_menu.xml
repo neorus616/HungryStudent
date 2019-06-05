@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_post"
+        android:title="Add New Post"
+        android:icon="@drawable/add_post"/>
+
+    <item
+        android:id="@+id/nav_new"
+        android:title="Fresh"
+        android:icon="@drawable/hot1"/>
+
+    <item
+        android:id="@+id/nav_hot"
+        android:title="Hot"
+        android:icon="@drawable/hot2"/>
+
+    <item
+        android:id="@+id/nav_time"
+        android:title="By Time"
+        android:icon="@drawable/bytime"/>
+
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/TimeGroup" >
+    <item
+        android:id="@+id/nav_time10"
+        android:title="                         10"/>
+
+    <item
+        android:id="@+id/nav_time20"
+        android:title="                         20"/>
+
+    <item
+        android:id="@+id/nav_time30"
+        android:title="                         30"/>
+    </group>
+
+    <item
+        android:id="@+id/nav_cost"
+        android:title="By Cost"
+        android:icon="@drawable/money"
+        />
+
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/CostGroup" >
+        <item
+            android:id="@+id/nav_cost10"
+            android:title="                         10"/>
+
+        <item
+            android:id="@+id/nav_cost20"
+            android:title="                         20"/>
+
+        <item
+            android:id="@+id/nav_cost30"
+            android:title="                         30"/>
+    </group>
+
+    <item
+        android:id="@+id/nav_follows"
+        android:title="My Follows"
+        android:icon="@drawable/friends"/>
+
+    <item
+        android:id="@+id/nav_find_friends"
+        android:title="Find Friends"
+        android:icon="@drawable/find_people"/>
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="Search recipes" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile1"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"/>
+
+</menu>

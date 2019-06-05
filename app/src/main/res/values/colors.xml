@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0fc637</color>
+    <color name="colorPrimaryDark">#f57e20</color>
+    <color name="colorAccent">#3e3a3a</color>
+    <color name="colorProfile">#3B4041</color>
+    <color name="mainBackground">#D7D7D7</color>
+    <color name="postBackground">#e2e7e5</color>
+    <color name="primaryRed">#be1013</color>
+</resources>
